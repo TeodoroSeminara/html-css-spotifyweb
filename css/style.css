@@ -10,18 +10,11 @@
 :root {
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif; ;
     font-size: 12px;
+    font-weight: 700;
     color: #A3A3A3;
 }
 
-button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-}
+
 
 .btn {
     margin-right: 10px;
@@ -33,24 +26,27 @@ button {
 
 h3 {
     padding-left: 5px;
-}
-
-ul {
-    list-style-type: none;
-    /* padding-left: 15px; */
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-li {
-    padding: 5px;
-    margin-top: 10px;
+    color: #fff;
 }
 
 .small-img {
     width: 25px;
     margin-right: 5px;
     vertical-align: middle;
+}
+
+/* UL list setting */
+ul {
+    list-style-type: none;
+    /* padding-left: 15px; */
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 80%;
+}
+
+li {
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .plus-square {
@@ -64,20 +60,44 @@ li {
     margin-right: 15px;
 }
 
+/* Reset btn - a */
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
 /* Main */
 
 .container {
-    /* position: relative; */
     display: flex;
     height: 100%;
 
+}
+
+/* navbar */
+
+#logo {
+    max-width: 70%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 2rem;
 }
 
 #navbar {
     height: calc(100vh - 90px);
     width: 250px;
     background-color: #000000;
-    padding-left: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,13 +108,42 @@ li {
     height: 40vh;
 }
 
-#logo {
-    max-width: 70%;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 2rem;
+.down-img {
+    width: 15px;
 }
-/* Section musi */
+
+.download {
+    margin: 10px 0;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+.user {
+    color: #fff;
+    font-size: 1.5rem;
+    border-top: 1px solid gray;
+}
+
+#navbar li,
+span {
+    cursor: pointer;
+}
+/* HOVER NAV */
+
+li:hover, .installer:hover {
+    color: #fff;
+}
+
+.fa-solid:hover {
+    background-color: #fff;
+}
+/* Section music */
 
 #music {
     display: flex;
