@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font embedded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
+    <!--Fontawesome embedded  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico">
@@ -16,15 +26,46 @@
     <main>
         <div class="container">
             <nav id="navbar">
-                <img id="logo" src="img/logo.svg" alt="logo spotify">
+                <div class="top-nav">
+                    <img id="logo" src="img/logo.svg" alt="logo spotify">
 
-                <div class="menu">
-                    <ul>
-                        <li><img class="small-img" src="img/home.svg" alt="home"><span class="home block">Home</span></li>
-                        <li><img class="small-img" src="img/search.svg" alt="search"><span class="search block">Cerca</span></li>
-                        <li><img class="small-img" src="img/libreria.svg" alt="my library"><span class="my-library block">La tua
-                        libreria</span></li>
-                    </ul>
+                    <div class="menu">
+                        <ul>
+                            <li><img class="small-img" src="img/home.svg" alt="home"><span class="home ">Home</span>
+                            </li>
+                            <li><img class="small-img" src="img/search.svg" alt="search"><span
+                                    class="search ">Cerca</span></li>
+                            <li><img class="small-img" src="img/libreria.svg" alt="my library"><span
+                                    class="my-library ">La tua
+                                    libreria</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="playlist">
+                        <ul class="list-scroll">
+                            <h3>Playlist</h3>
+                            <li class="new-play"><i class="fa-solid fa-plus plus-square"></i>Crea Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bot-nav">
+                    <div class="download">
+                        <img class="small-img" src="img/download.svg" alt="download">
+                        <span class="installer">Installa app</span>
+                    </div>
+                    <div class="user">
+                        <img class="small-img user-img" src="img/profile.svg" alt="user img">
+                        <span class="profile">John Doe</span>
+                    </div>
+
+
                 </div>
 
             </nav>
