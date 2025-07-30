@@ -27,21 +27,21 @@
         <div class="container">
             <nav id="navbar">
                 <div class="top-nav">
-                    <img id="logo" src="img/logo.svg" alt="logo spotify">
+                    <img id="logo" class="xs-none" src="img/logo.svg" alt="logo spotify">
 
                     <div class="menu">
                         <ul>
-                            <li><img class="small-img" src="img/home.svg" alt="home"><span class="home ">Home</span>
+                            <li><img class="small-img" src="img/home.svg" alt="home"><span class="home xs-none">Home</span>
                             </li>
                             <li><img class="small-img" src="img/search.svg" alt="search"><span
-                                    class="search ">Cerca</span></li>
+                                    class="search xs-none">Cerca</span></li>
                             <li><img class="small-img" src="img/libreria.svg" alt="my library"><span
-                                    class="my-library ">La tua
+                                    class="my-library xs-none">La tua
                                     libreria</span></li>
                         </ul>
                     </div>
 
-                    <div class="playlist">
+                    <div class="playlist xs-none">
                         <ul class="list-scroll">
                             <h4>Playlist</h4>
                             <li class="new-play"><a href="#"><i class="fa-solid fa-plus plus-square"></i>Crea
@@ -59,11 +59,11 @@
                 <div class="bot-nav">
                     <div class="download">
                         <img class="small-img down-img" src="img/download.svg" alt="download">
-                        <span class="installer">Installa app</span>
+                        <span class="installer xs-none">Installa app</span>
                     </div>
                     <div class="user">
                         <img class="small-img user-img" src="img/profile.svg" alt="user img">
-                        <span class="profile">John Doe</span>
+                        <span class="profile xs-none">John Doe</span>
                     </div>
 
 
@@ -169,10 +169,31 @@
 
             </div>
             <div class="play-bar">
+                <div class="media">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="time-bar">
+                    <span class="timer">0:25</span>
+                    <div class="line small-line"></div>
+                    <div class="line big-line"></div>
+                    <span class="timer">4:25</span>
+                </div>
 
             </div>
             <div class="setting">
-
+                <div class="icon-setting">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="line small-line"></div>
+                <div class="line big-line">
+                </div>
+                <div class="green-line"></div>
             </div>
 
         </section>
