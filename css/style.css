@@ -100,15 +100,13 @@ li:hover,
     color: #fff;
 }
 
+.new-play:hover i {
+    background-color: #fff;
+}
+
 .btn:hover {
     font-size: 1.1rem;
 }
-
-
-
-/* .fa-solid:hover {
-    background-color: #fff;
-} */
 
 .col .play-btn {
     display: none;
@@ -136,33 +134,31 @@ li:hover,
     /* transform: translate(-25px, -25px); */
 }
 
+.album-info:hover .subtitle {
+    text-decoration: underline;
+    color: #fff;
+}
+
 /* footer line */
 .line {
-    border: 3px solid gray;
+    border-bottom: 3px solid gray;
     border-radius: 10px;
+    width: 60%;
+    overflow: hidden;
 }
 
 .small-line {
-    width: 10%;
-    border: 3px solid#dfdfdf;
+    border-bottom: 3px solid#dfdfdf;
     border-radius: 10px;
-}
-
-.big-line {
     width: 30%;
 }
 
-/* Reset btn - a */
-
-/* button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+/* .big-line {
+    width: 20%;
+    border-bottom: 3px solid#dfdfdf;
 } */
+
+/* Reset btn - a */
 
 a {
     text-decoration: none;
@@ -293,7 +289,8 @@ a {
 
 /* footer left */
 .brano {
-    width: 25%;
+    width: 20%;
+    flex-shrink: 2;
     display: flex;
 }
 
@@ -363,7 +360,8 @@ a {
 
 /* footer right */
 .setting {
-    width: 25%;
+    width: 20%;
+    flex-shrink: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,6 +397,12 @@ a {
     .col {
         width: calc(100% /2 - 10px);
     }
+
+    /* .album-icon {
+    display: block;
+    font-size: 1.5rem;
+    align-items: center;
+} */
 }
 
 /* Smartphone XS version */
