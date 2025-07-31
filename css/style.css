@@ -61,11 +61,8 @@ h5 {
     margin-top: 5px;
 }
 
-/* .subtitle {
-    mar-top: 25px;
-} */
-
 /* UL list setting */
+
 ul {
     list-style-type: none;
     /* padding-left: 15px; */
@@ -89,11 +86,6 @@ li {
     margin-right: 15px;
 }
 
-.list-scroll h4 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
 
 /* HOVER */
 
@@ -130,8 +122,6 @@ li:hover,
     display: block;
     font-size: 5rem;
     position: absolute;
-    /* width: 40px;
-    height: 40px; */
     margin: 0;
     top: calc(50% - 35px);
     left: calc(50% - 30px);
@@ -144,11 +134,17 @@ li:hover,
 }
 
 .play-btn:hover {
-    font-size: 3.1rem;
+    transform: scale(1.1);
+}
+
+.small-line:hover .green-line,
+.time-line:hover .green-line {
+    display: block;
+    cursor: pointer;
 }
 
 /* footer line */
-.line {
+.time-line {
     border: 2px solid gray;
     border-radius: 10px;
     width: 60%;
@@ -170,6 +166,23 @@ li:hover,
     flex-grow: 1;
 }
 
+.green-line {
+    display: none;
+    border: 2px solid #00ff08;
+    border-radius: 10px;
+    width: 30%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+/* .circle-time {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    } */
 /* Reset btn - a */
 
 a {
@@ -200,12 +213,29 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+}
+
+.left-line::after {
+    content: "";
+    border: 2px solid #00ff08;
+    display:block;
+    height: 20px;
+    position: absolute;
+    right: calc(100% - 2px);
+    top: 110px;
 }
 
 .playlist {
     overflow-y: auto;
     height: calc(40vh - 90px);
     flex-grow: 1;
+}
+
+.list-scroll h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 .down-img {
@@ -271,6 +301,14 @@ a {
     text-transform: uppercase;
     gap: 15px;
     margin-bottom: 2rem;
+}
+
+.bottom-line::after {
+    content: "";
+    border: 1px solid #00ff08;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .row {
@@ -491,6 +529,9 @@ a {
         display: none;
     }
 
+    .left-line::after {
+        display: none;
+    }
 }
 
 @media screen and (max-height:360px) {

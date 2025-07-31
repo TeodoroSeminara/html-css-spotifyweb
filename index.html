@@ -25,7 +25,7 @@
 
     <main>
         <div class="container">
-            <nav id="navbar">
+            <nav id="navbar" class="left-line" >
                 <div class="top-nav">
                     <img id="logo" class="xs-none" src="img/logo.svg" alt="logo spotify">
                     <img src="img/logo-small.svg" alt="logo piccolo" id="small-logo">
@@ -82,7 +82,7 @@
                 <div class="library">
                     <div>
                         <ul class="select">
-                            <li><a href="#">In evidenza</a></li>
+                            <li class="bottom-line"><a href="#">In evidenza</a></li>
                             <li><a href="#">Podcast</a></li>
                             <li><a href="#">Classifiche </a></li>
                             <li><a href="#">Generi e mood </a></li>
@@ -215,8 +215,8 @@
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <!-- <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a> -->
-                     <div class="try"><a class="play-btn" href="#"><i  class="fa-regular fa-circle-play"></i></a>
-                        </div>
+                    <a class="play-btn" href="#"><i  class="fa-regular fa-circle-play"></i></a>
+                    
                     <i class="fa-solid fa-forward-step"></i>
                     
                     <i class="fa-solid fa-rotate-right"></i>
@@ -224,8 +224,9 @@
 
                 <div class="time-bar">
                     <span class="timer">0:25</span>
-                    <div class="line">
+                    <div class="time-line">
                         <div class="white-line"></div>
+                        <div class="green-line"></div>
                     </div>
                     <span class="timer">4:25</span>
                 </div>
@@ -238,11 +239,12 @@
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
-                <div class="line small-line">
+                <div class="time-line small-line">
                         <div class="white-line"></div>
+                        <div class="green-line"></div>
                     </div>
                 
-                <div class="green-line"></div>
+                
             </div>
 
         </section>
