@@ -29,7 +29,8 @@
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     color: #fff;
 }
 
@@ -37,9 +38,12 @@ h2 {
     font-size: 1.8rem;
 }
 
-h3,
-h5 {
+h3 {
     font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
 }
 
 .small-img {
@@ -113,10 +117,10 @@ li:hover,
 
 }
 
-.hover-img:hover img { 
-/* opacity: 0.5; */
- cursor: pointer;
- filter: opacity(0.5);
+.hover-img:hover img {
+    /* opacity: 0.5; */
+    cursor: pointer;
+    filter: opacity(0.5);
 }
 
 .col-hov {
@@ -125,12 +129,13 @@ li:hover,
 
 .hover-img:hover .play-btn {
     display: block;
+    font-size: 5rem;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     margin: 0;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
+    top: calc(50% - 35px);
+    left: calc(50% - 30px);
     /* transform: translate(-25px, -25px); */
 }
 
@@ -139,6 +144,9 @@ li:hover,
     color: #fff;
 }
 
+.media:hover .play-btn{
+    font-size: 3.1rem;
+}
 /* footer line */
 .line {
     border-bottom: 3px solid gray;
@@ -269,7 +277,6 @@ a {
     text-align: center;
     width: calc((100% / 6) - (50px / 6));
     margin: 30px 0;
-    position: relative;
 }
 
 .col img {
@@ -295,17 +302,18 @@ a {
 }
 
 .album img {
-    height: 100%;
+    width: 50px;
 }
 
 .album {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .album-info {
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 .album-icon {
@@ -315,16 +323,21 @@ a {
 }
 
 .album-icon a {
-    margin: 10px;
+    margin: 0 0.5rem;
+}
+
+.album .subtitle {
+    font-size: 0.8rem;
 }
 
 /* footer center */
 .play-bar {
     flex-grow: 1;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     padding-top: 10px;
+    flex-shrink: 3;
 }
 
 .media i {
@@ -334,19 +347,22 @@ a {
 }
 
 .play-btn {
-    margin: 0 15px;
-    border: 3px solid #fff;
+    display: inline-block;
+    margin: 0 0.8rem;
+    color: #fff;
+    font-size: 3rem;
+    vertical-align: middle;
+    /* bordo disegnato */
+    /* border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
     width: 40px;
     height: 40px;
-    line-height: 35px;
-    color: #fff;
-
+    line-height: 35px; */
 }
 
 .time-bar {
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -354,14 +370,13 @@ a {
 }
 
 .timer {
-    font-size: 1rem;
-    margin: 0 30px;
+    font-size: 0.8rem;
+    margin: 0 1rem;
 }
 
 /* footer right */
 .setting {
     width: 20%;
-    flex-shrink: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,7 +385,12 @@ a {
 
 .icon-setting i {
     font-size: 1.3rem;
-    margin-right: 15px;
+    margin-right: 0.8rem;
+}
+
+.try {
+    background-color: #fff;
+    color: #fff;
 }
 
 /* Tablet version */
@@ -388,6 +408,14 @@ a {
         flex-wrap: wrap;
     }
 
+    .album-icon {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .album img {
+        max-width: 50px;
+    }
 }
 
 /* Smartphone S version */
@@ -398,11 +426,7 @@ a {
         width: calc(100% /2 - 10px);
     }
 
-    /* .album-icon {
-    display: block;
-    font-size: 1.5rem;
-    align-items: center;
-} */
+
 }
 
 /* Smartphone XS version */
@@ -443,5 +467,15 @@ a {
         text-align: center;
         margin: 0 auto;
         border: none;
+    }
+
+    .play-bar {
+        width: 260px;
+        flex-grow: 0;
+        font-size: 1.2rem;
+    }
+
+    .album img {
+        display: none;
     }
 }
